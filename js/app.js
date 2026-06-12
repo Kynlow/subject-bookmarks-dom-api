@@ -11,8 +11,8 @@ $form.addEventListener("submit", (e) => {
 	const title = formdata.get("titre");
 	const url = formdata.get("url");
 	const description = formdata.get("description");
-
 	addDatasOnAPI(title, url, description);
+    $form.reset()
 });
 
 function addDatasOnPage(title, url, description) {
